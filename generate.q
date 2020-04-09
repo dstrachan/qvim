@@ -21,24 +21,24 @@ qLibs:qLibHead,/:ssr[;".";"\\."]@'string asc distinct extraFuncs,raze getFuncs'[
 qFunctionHead:"syn keyword qFunction "
 qFunctions:qFunctionHead,/:string asc distinct 1_key`.q
 
-getContents:{[d]
-  i:til count contents;
+getContent:{[content;d]
+  i:til count content;
   f:first values:value d;
   l:last values;
-  head:contents f[0]#i;
-  middle:contents 1_(l[0]-f 1)#f[1]_i;
-  tail:contents 1_l[1]_i;
+  head:content f[0]#i;
+  middle:content 1_(l[0]-f 1)#f[1]_i;
+  tail:content 1_l[1]_i;
   res:head,value[first key d],$[f~l;();middle,value[last key d]],tail;
   res}
 
 // kFile
-contents:read0 kFile
-kPrimIndex:where contents like kPrimitiveHead,"*"
-qLibIndex:where contents like qLibHead,"*"
-kFile 0:getContents(min;max)@\:/:asc`kPrimitives`qLibs!(kPrimIndex;qLibIndex)
+content:read0 kFile
+kPrimIndex:where content like kPrimitiveHead,"*"
+qLibIndex:where content like qLibHead,"*"
+kFile 0:getContent[content;(min;max)@\:/:asc`kPrimitives`qLibs!(kPrimIndex;qLibIndex)]
 
 // qFile
-contents:read0 qFile
-qFuncIndex:where contents like qFunctionHead,"*"
-qFile 0:getContents(min;max)@\:/:asc enlist[`qFunctions]!enlist qFuncIndex
+content:read0 qFile
+qFuncIndex:where content like qFunctionHead,"*"
+qFile 0:getContent[content;(min;max)@\:/:asc enlist[`qFunctions]!enlist qFuncIndex]
 \\
