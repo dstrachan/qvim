@@ -14,11 +14,13 @@ endif
 source <sfile>:p:h/k.vim
 
 " all _ in names in q
-set iskeyword=@,_,48-57,.
+" set iskeyword=@,_,48-57,.
 
 " Identifier tweak to allow _ in identifiers
-syn match qIdentifier "\<\a\w*\>"
+syn match qIdentifier "\<[a-zA-Z\.][a-zA-Z0-9\._]*\>"
 syn match qGlobal "\<\u[A-Z0-9_]*\>"
+syn match qSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\._]*\>\)"
+syn match qHandle "\`:\{1,2}\([0-9a-zA-Z\\/._]\+:\=\)\{1,4}"
 " redo qPlaceholder as kPlaceholder may have got zapped
 syn match qPlaceholder "\<[xyz]\>"
 
@@ -169,6 +171,8 @@ if !exists("did_q_syntax_inits")
  hi link qFunction kFunction
  hi link qGlobal kGlobal
  hi link qIdentifier kIdentifier
+ hi link qSymbol kSymbol
+ hi link qHandle kHandle
  hi link qLang kLang
  hi link qPlaceholder kPlaceholder
  endif

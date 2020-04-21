@@ -67,7 +67,7 @@ syn match kBoolean /[01]\+b/
 " generic .?.* match - single letter reserved namespace
 " syn match kFunction /\.\a\.\a[a-zA-Z0-9]*/
 
-"Statement separator
+" Statement separator
 syn match kSeparator ";"
 
 " all the nulls and INFs
@@ -538,8 +538,8 @@ syn match qLib "\.z\.x"
 syn match qLib "\.z\.z"
 syn match qLib "\.z\.zd"
 
-"syn match kIdentifier "\<\a[a-zA-Z0-9]*\>"
-"syn match kIdentifier "\<[a-zA-Z\.][a-zA-Z0-9\.]*\>"
+" syn match kIdentifier "\<\a[a-zA-Z0-9]*\>"
+" syn match kIdentifier "\<[a-zA-Z\.][a-zA-Z0-9\.]*\>"
 syn match kPlaceholder "\<[xyz]\>"
 
 " Conditional and similar constructs
@@ -562,7 +562,7 @@ syn match kLang "^s)"
 syn match kError "^k)"
 
 " symbols and specialcase file+connection handles
-syn match kSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9_\.]*\>\)"
+syn match kSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\.]*\>\)"
 syn match kHandle "\`:\{1,2}\([0-9a-zA-Z\\/.]\+:\=\)\{1,4}"
 
 " attributes `p#, `g#, `s# and `u#
