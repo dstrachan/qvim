@@ -11,16 +11,16 @@ let b:did_indent = 1
 
 " [-- local settings (must come before aborting the script) --]
 setlocal indentexpr=KIndentGet(v:lnum)
-setlocal indentkeys=o,O,*<Return>,<Bs>,!^F,<{>,<}>,<[>,<]>
+setlocal indentkeys=o,O,*<Return>,<Bs>,!^F,<{>,<}>,<[>,<]>,<(>,<)>
 
-" [-- count indent-increasing '{[' of k line a:lnum --]
+" [-- count indent-increasing '{[(' of k line a:lnum --]
 fun! <SID>KIndentOpen(lnum)
-    return strlen(substitute(getline(a:lnum), '[^{[]\+', '', 'g'))
+  return strlen(substitute(substitute(getline(a:lnum), '"\([^"\\]\|\\.\)*"', '', 'g'), '[^{[(]\+', '', 'g'))
 endfun
 
-" [-- count indent-decreasing ']}' of k line a:lnum --]
+" [-- count indent-decreasing ')]}' of k line a:lnum --]
 fun! <SID>KIndentClose(lnum)
-    return strlen(substitute(getline(a:lnum), '[^}\]]\+', '', 'g'))
+  return strlen(substitute(substitute(getline(a:lnum), '"\([^"\\]\|\\.\)*"', '', 'g'), '[^}\])]\+', '', 'g'))
 endfun
 
 " [-- return the sum of indents respecting the syntax of a:lnum --]
