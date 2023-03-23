@@ -1,13 +1,8 @@
-" Vim syntax file
-" Language: q
-" Maintainer: Simon Garland <simon@kx.com>
-" Last Change: 2010.08.21
-
 " Remove any old syntax stuff hanging around
 syn clear
 
 if !exists("main_syntax")
- let main_syntax = 'q'
+  let main_syntax = 'q'
 endif
 
 " Read the k syntax to start with
@@ -64,6 +59,7 @@ syn keyword qFunction gtime
 syn keyword qFunction hclose
 syn keyword qFunction hcount
 syn keyword qFunction hdel
+syn keyword qFunction hopen
 syn keyword qFunction hsym
 syn keyword qFunction iasc
 syn keyword qFunction idesc
@@ -166,19 +162,19 @@ syn match qLang "^k)"
 syn match qError "^q)"
 
 if !exists("did_q_syntax_inits")
- let did_q_syntax_inits = 1
- hi link qError kError
- hi link qFunction kFunction
- hi link qGlobal kGlobal
- hi link qIdentifier kIdentifier
- hi link qSymbol kSymbol
- hi link qHandle kHandle
- hi link qLang kLang
- hi link qPlaceholder kPlaceholder
- endif
+  let did_q_syntax_inits = 1
+  hi link qError kError
+  hi link qFunction kFunction
+  hi link qGlobal kGlobal
+  hi link qIdentifier kIdentifier
+  hi link qSymbol kSymbol
+  hi link qHandle kHandle
+  hi link qLang kLang
+  hi link qPlaceholder kPlaceholder
+endif
 
 let b:current_syntax = "q"
 
 if main_syntax == 'q'
- unlet main_syntax
+  unlet main_syntax
 endif
