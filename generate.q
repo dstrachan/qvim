@@ -5,7 +5,7 @@ if[not qFile~key qFile:` sv dir,`q.vim;
   exit 1];
 
 extraPrimitives:`by`from
-extraFuncs:`.Q.pf`.Q.vp`.Q.x
+extraFuncs:` sv'`.Q,/:`D`P`PD`PV`pd`pf`pn`pv`u`vp`x
 
 getFuncs:{[namespace]
   ` sv'namespace,/:1_key namespace}
