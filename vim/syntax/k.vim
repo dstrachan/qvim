@@ -567,7 +567,7 @@ syn match kLang "^s)"
 syn match kError "^k)"
 
 " symbols and specialcase file+connection handles
-syn match kSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\.]*\>\)"
+syn match kSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\.:]*\>\)"
 syn match kHandle "\`:\{1,2}\([0-9a-zA-Z\\/.]\+:\=\)\{1,4}"
 
 " attributes `p#, `g#, `s# and `u#

@@ -14,12 +14,12 @@ source <sfile>:p:h/k.vim
 " Identifier tweak to allow _ in identifiers
 syn match qIdentifier "\<[a-zA-Z\.][a-zA-Z0-9\._]*\>"
 syn match qGlobal "\<\u[A-Z0-9_]*\>"
-syn match qSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\._]*\>\)"
+syn match qSymbol "\(`\<[a-zA-Z0-9\.][a-zA-Z0-9\.:_]*\>\)"
 syn match qHandle "\`:\{1,2}\([0-9a-zA-Z\\/._]\+:\=\)\{1,4}"
 " redo qPlaceholder as kPlaceholder may have got zapped
 syn match qPlaceholder "\<[xyz]\>"
 
-" functions in .q namespace as q primitives 
+" functions in .q namespace as q primitives
 syn keyword qFunction aj
 syn keyword qFunction aj0
 syn keyword qFunction ajf
