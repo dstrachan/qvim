@@ -1,9 +1,7 @@
-dir:` sv(`$":",getenv`HOME),`.vim`syntax
-kFile:` sv dir,`k.vim
-if[not kFile~key kFile;
+dir:` sv first[` vs hsym .z.f],`vim`syntax
+if[not kFile~key kFile:` sv dir,`k.vim;
   exit 1];
-qFile:` sv dir,`q.vim
-if[not qFile~key qFile;
+if[not qFile~key qFile:` sv dir,`q.vim;
   exit 1];
 
 extraPrimitives:`by`from
