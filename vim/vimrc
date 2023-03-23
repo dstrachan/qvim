@@ -431,9 +431,6 @@ endfunction
 
 " CUSTOM STUFF
 
-set colorcolumn=100
-highlight ColorColumn ctermbg=darkgray
-
 if &diff
   highlight DiffAdd     ctermfg=black ctermbg=green
   highlight DiffChange  ctermfg=black ctermbg=brown
