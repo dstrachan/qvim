@@ -59,7 +59,6 @@ syn keyword qFunction gtime
 syn keyword qFunction hclose
 syn keyword qFunction hcount
 syn keyword qFunction hdel
-syn keyword qFunction hopen
 syn keyword qFunction hsym
 syn keyword qFunction iasc
 syn keyword qFunction idesc

@@ -110,14 +110,12 @@ syn keyword kPrimitive log
 syn keyword kPrimitive max
 syn keyword kPrimitive min
 syn keyword kPrimitive prd
-syn keyword kPrimitive reval
 syn keyword kPrimitive select
 syn keyword kPrimitive setenv
 syn keyword kPrimitive sin
 syn keyword kPrimitive sqrt
 syn keyword kPrimitive ss
 syn keyword kPrimitive sum
-syn keyword kPrimitive svar
 syn keyword kPrimitive tan
 syn keyword kPrimitive update
 syn keyword kPrimitive var
@@ -203,6 +201,7 @@ syn keyword qLib \.Q\.fsn
 syn keyword qLib \.Q\.ft
 syn keyword qLib \.Q\.fu
 syn keyword qLib \.Q\.gc
+syn keyword qLib \.Q\.gz
 syn keyword qLib \.Q\.hap
 syn keyword qLib \.Q\.hdpf
 syn keyword qLib \.Q\.hg
@@ -241,7 +240,6 @@ syn keyword qLib \.Q\.qa
 syn keyword qLib \.Q\.qb
 syn keyword qLib \.Q\.qd
 syn keyword qLib \.Q\.qe
-syn keyword qLib \.Q\.qm
 syn keyword qLib \.Q\.qp
 syn keyword qLib \.Q\.qt
 syn keyword qLib \.Q\.res
@@ -261,6 +259,7 @@ syn keyword qLib \.Q\.tt
 syn keyword qLib \.Q\.tx
 syn keyword qLib \.Q\.ty
 syn keyword qLib \.Q\.ua
+syn keyword qLib \.Q\.unm
 syn keyword qLib \.Q\.v
 syn keyword qLib \.Q\.view
 syn keyword qLib \.Q\.vp
@@ -390,7 +389,6 @@ syn keyword qLib \.q\.gtime
 syn keyword qLib \.q\.hclose
 syn keyword qLib \.q\.hcount
 syn keyword qLib \.q\.hdel
-syn keyword qLib \.q\.hopen
 syn keyword qLib \.q\.hsym
 syn keyword qLib \.q\.iasc
 syn keyword qLib \.q\.idesc
