@@ -133,6 +133,7 @@ syn keyword qLib \.Q\.A
 syn keyword qLib \.Q\.Aa
 syn keyword qLib \.Q\.BP
 syn keyword qLib \.Q\.Cf
+syn keyword qLib \.Q\.D
 syn keyword qLib \.Q\.DL
 syn keyword qLib \.Q\.IN
 syn keyword qLib \.Q\.K
@@ -144,6 +145,9 @@ syn keyword qLib \.Q\.Lu
 syn keyword qLib \.Q\.Lx
 syn keyword qLib \.Q\.M
 syn keyword qLib \.Q\.MAP
+syn keyword qLib \.Q\.P
+syn keyword qLib \.Q\.PD
+syn keyword qLib \.Q\.PV
 syn keyword qLib \.Q\.S
 syn keyword qLib \.Q\.V
 syn keyword qLib \.Q\.Xf
@@ -227,14 +231,17 @@ syn keyword qLib \.Q\.p1
 syn keyword qLib \.Q\.p2
 syn keyword qLib \.Q\.par
 syn keyword qLib \.Q\.pcnt
+syn keyword qLib \.Q\.pd
 syn keyword qLib \.Q\.pf
 syn keyword qLib \.Q\.pl
 syn keyword qLib \.Q\.pl0
 syn keyword qLib \.Q\.pm
+syn keyword qLib \.Q\.pn
 syn keyword qLib \.Q\.prf0
 syn keyword qLib \.Q\.prr
 syn keyword qLib \.Q\.ps
 syn keyword qLib \.Q\.pt
+syn keyword qLib \.Q\.pv
 syn keyword qLib \.Q\.q0
 syn keyword qLib \.Q\.qa
 syn keyword qLib \.Q\.qb
@@ -258,6 +265,7 @@ syn keyword qLib \.Q\.ts
 syn keyword qLib \.Q\.tt
 syn keyword qLib \.Q\.tx
 syn keyword qLib \.Q\.ty
+syn keyword qLib \.Q\.u
 syn keyword qLib \.Q\.ua
 syn keyword qLib \.Q\.unm
 syn keyword qLib \.Q\.v
