@@ -158,7 +158,7 @@ syn keyword qFunction xrank
 
 " Include
 syn match qLang "^k)"
-syn match qError "^q)"
+syn match qError "\(\(^\|;\|\[\)\s*\)\@<='[a-zA-Z][a-zA-Z0-9\._]*"
 
 if !exists("did_q_syntax_inits")
   let did_q_syntax_inits = 1
