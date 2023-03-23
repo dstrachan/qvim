@@ -1,8 +1,3 @@
-" Description:	k indenter
-" Author:	simon garland <simon_garland@gmx.net>
-" URL:		http://271828.net/vim/indent/k.vim
-" Last Change:	$Date: 2001/09/11 05:33:24 $
-
 " Only load this indent file when no other was loaded.
 if exists("b:did_indent")
   finish
@@ -41,5 +36,3 @@ fun! KIndentGet(lnum)
 
   return indent(lnum) + (&sw * ind)
 endfun
-
-" [-- EOF <runtime>/indent/k.vim --]
