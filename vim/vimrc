@@ -393,3 +393,15 @@ if &diff
   highlight DiffDelete  ctermfg=black ctermbg=cyan
   highlight DiffText    ctermfg=black ctermbg=lightblue
 endif
+
+cnoreabbrev <expr> term getcmdtype() == ":" && getcmdline() == 'term' ? 'term ++curwin' : 'term'
+
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+let g:terminal_ansi_colors = [
+                        \'#000000', '#cd3131', '#0dbc79', '#e5e510',
+                        \'#3b8eea', '#bc3fbc', '#11a8cd', '#d4d4d4',
+                        \'#808080', '#f14c4c', '#23d18b', '#f5f543',
+                        \'#2472c8', '#d670d6', '#29b8db', '#ffffff']
